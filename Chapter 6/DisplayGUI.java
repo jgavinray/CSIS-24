@@ -42,6 +42,16 @@ public class DisplayGUI
         System.out.println("Received input: " + num + " from GUI.");
     }
     
+    public void input(int num)
+    {
+        System.out.println("Received input: " + num + " from GUI.");
+    }
+    
+    public void input(float num)
+    {
+        System.out.println("Received input: " + num + " from GUI.");
+    }
+    
     public void input(String s1)
     {
       System.out.println("Received input: " + s1 + " from GUI.");
@@ -59,4 +69,25 @@ public class DisplayGUI
         JOptionPane.showMessageDialog(null, s1, header, JOptionPane.INFORMATION_MESSAGE);
         
     }
+    
+    public void output(int num)
+    {
+        System.out.println("Displaying in GUI:\n" + num);
+        JOptionPane.showMessageDialog(null, num, header, JOptionPane.INFORMATION_MESSAGE);
+        
+    }
+    
+    public void output(double num)
+    {
+        System.out.println("Displaying in GUI:\n" + num);
+        JOptionPane.showMessageDialog(null, num, header, JOptionPane.INFORMATION_MESSAGE);
+        
+    }
+    public void output(float num)
+    {
+        System.out.println("Displaying in GUI:\n" + num);
+        JOptionPane.showMessageDialog(null, num, header, JOptionPane.INFORMATION_MESSAGE);
+        
+    }
+
 }
