@@ -49,13 +49,13 @@ public class DisplayGUI
     
     public void output()
     {
-        System.out.println("Displaying in GUI: " + string);
+        System.out.println("Displaying in GUI:\n" + string);
         JOptionPane.showMessageDialog(null, string, header, JOptionPane.INFORMATION_MESSAGE);
     }
     
     public void output(String s1)
     {
-        System.out.println("Displaying in GUI: " + s1);
+        System.out.println("Displaying in GUI:\n" + s1);
         JOptionPane.showMessageDialog(null, s1, header, JOptionPane.INFORMATION_MESSAGE);
         
     }

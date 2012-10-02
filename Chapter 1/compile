@@ -1,0 +1,18 @@
+# Script for compile/running of Java applications under *nix environment
+# J. Gavin Ray for CSIS-24 Fall Semester 2012
+#
+# This script will take a filename minus the extention and run the following
+# commands.  In order for this script to be used, it must be set as an executable
+# on your machine.  On the commandline, be in the same directory as the this file
+# and type chmod +x compile.  Doing so will allow this file to be run by typing
+# "compile (filename goes here)" or depending on your shell at the commandline
+# "./compile (filenamegoes here)".
+
+# Example:
+#
+# ./compile helloWorld
+#
+
+ 
+javac $1.java
+java $1
